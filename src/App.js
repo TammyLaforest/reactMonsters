@@ -33,7 +33,7 @@ class App extends Component {
     const { monsters, searchField } = this.state;
 
     // Filter monsters via text in search bar
-    const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()))
+    const filteredMonsters = monsters.filter(monster => monster.username.toLowerCase().includes(searchField.toLowerCase()))
 
     return (
       <div className="App" >

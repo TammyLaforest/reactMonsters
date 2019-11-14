@@ -18,7 +18,7 @@ class App extends Component {
 
   // Get names and other info for monsters from API
   componentDidMount() {
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }))
   }
